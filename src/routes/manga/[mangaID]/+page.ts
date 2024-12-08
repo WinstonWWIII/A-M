@@ -6,6 +6,9 @@ export const load: Load = async ({ fetch, params }) => {
 
 	const data = await response.json();
 	return {
-		title: data.data.title
+		title: data.data.title,
+		imgURL: data.data.images.jpg.large_image_url,
+		synopsis: data.data.synopsis,
+		background: data.data.background
 	};
 };

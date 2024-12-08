@@ -25,18 +25,17 @@
 						{#if isAnime}
 							<HoverCard.Trigger
 								href="/anime/{ID}"
-								class="flex flex-col rounded-[2rem] p-4 transition hover:ring-2"
+								class="flex flex-col justify-center rounded-[2rem] p-4 transition hover:ring-2"
 							>
 								<img src={imgURL} alt="" class="rounded-lg" />
 								<span class="mt-2">{top15.title}</span>
 							</HoverCard.Trigger>
-							<HoverCard.Content class="text-center" side="bottom"
-								>{top15.year == null ? 'N/A' : top15.year}
-								{top15.episodes}
-								{top15.status}
-								{top15.rating}
-								{top15.score}</HoverCard.Content
-							>
+							<HoverCard.Content class="" side="bottom">
+								<div>Year: {top15.year == null ? 'N/A' : top15.year}</div>
+								<div>Episodes: {top15.episodes}</div>
+								<div>Status: {top15.status}</div>
+								<div>Score: {top15.score}</div>
+							</HoverCard.Content>
 						{:else}
 							<HoverCard.Trigger
 								href="/manga/{ID}"
@@ -46,9 +45,9 @@
 								<span class="mt-2">{top15.title}</span>
 							</HoverCard.Trigger>
 							<HoverCard.Content class="text-center" side="bottom">
-								{top15.status}
-								{top15.score}</HoverCard.Content
-							>
+								<div>Status: {top15.status}</div>
+								<div>Score: {top15.score}</div>
+							</HoverCard.Content>
 						{/if}
 					</HoverCard.Root>
 				</div>

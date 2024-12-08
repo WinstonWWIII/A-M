@@ -10,7 +10,7 @@
 <nav class="sticky top-0 z-10 bg-background py-6">
 	<div class="mx-auto flex w-4/6 items-center justify-between">
 		<div class="flex items-center">
-			<a href="/" class="mr-4 text-2xl">A&M</a>
+			<a href="/" class="mr-4 text-3xl">A&M</a>
 			<Button href="/" class="text-base hover:font-semibold" variant="link">Anime</Button>
 			<Button href="/" class="text-base hover:font-semibold" variant="link">Manga</Button>
 		</div>
