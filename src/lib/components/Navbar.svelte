@@ -5,6 +5,7 @@
 	import { toggleMode } from 'mode-watcher';
 	import Button from './ui/button/button.svelte';
 	import Separator from './ui/separator/separator.svelte';
+	import Search from './Search.svelte';
 </script>
 
 <nav class="sticky top-0 z-10 bg-background py-6">
@@ -14,7 +15,8 @@
 			<Button href="/" class="text-base hover:font-semibold" variant="link">Anime</Button>
 			<Button href="/" class="text-base hover:font-semibold" variant="link">Manga</Button>
 		</div>
-		<div>
+		<div class="flex items-center gap-4">
+			<Search />
 			<Button onclick={toggleMode} variant="outline" size="icon">
 				<Sun class=" h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
 				<Moon

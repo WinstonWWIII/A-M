@@ -7,9 +7,6 @@ export const load: Load = async ({ fetch }) => {
 	const topAnimeData = await topAnime.json();
 	const topMangaData = await topManga.json();
 
-	console.log(topAnimeData);
-	console.log(topMangaData);
-
 	return {
 		animeData: topAnimeData.data,
 		mangaData: topMangaData.data

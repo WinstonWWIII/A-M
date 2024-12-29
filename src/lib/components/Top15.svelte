@@ -1,7 +1,6 @@
 <script lang="ts">
 	let { data } = $props();
 
-	import * as Card from '$lib/components/ui/card/index.js';
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import * as HoverCard from '$lib/components/ui/hover-card/index.js';
 </script>
@@ -39,12 +38,12 @@
 						{:else}
 							<HoverCard.Trigger
 								href="/manga/{ID}"
-								class="flex flex-col rounded-lg p-6 transition hover:ring-2"
+								class="flex flex-col justify-center rounded-[2rem] p-4 transition hover:ring-2"
 							>
 								<img src={imgURL} alt="" class="rounded-lg" />
 								<span class="mt-2">{top15.title}</span>
 							</HoverCard.Trigger>
-							<HoverCard.Content class="text-center" side="bottom">
+							<HoverCard.Content class="" side="bottom">
 								<div>Status: {top15.status}</div>
 								<div>Score: {top15.score}</div>
 							</HoverCard.Content>
